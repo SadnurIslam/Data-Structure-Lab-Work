@@ -20,14 +20,14 @@ void insert(int key){
 	tree[pos]=key;
 	size=pos;
 }
-void displayTree(){		//works better with single-digit nodes.
+void displayTree(){		
 	int i, j, space, lineGap, level = log2(size+1);
-	for(i=0; i<=level; i++){					//levels
-		for(j=0; j<(1<<i); j++){			//nodes of each level
+	for(i=0; i<=level; i++){					
+		for(j=0; j<(1<<i); j++){			
 			space = 2*(1<<(level-i));
-//			if(j>0 && j%2==0){
-//                space=space/2;
-//			}
+			if(j>0 && j%2==0){
+	                space=space/2;
+			}
 			while(space--){
 				cout<<" ";
 			}
