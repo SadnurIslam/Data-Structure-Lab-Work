@@ -25,9 +25,6 @@ void displayTree(){
 	for(i=0; i<=level; i++){					
 		for(j=0; j<(1<<i); j++){			
 			space = 2*(1<<(level-i));
-			if(j>0 && j%2==0){
-	                space=space/2;
-			}
 			while(space--){
 				cout<<" ";
 			}
